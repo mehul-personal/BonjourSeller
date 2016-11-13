@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtBrandName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/str_enter_brand_name"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginRight="5dp"
+                android:layout_height="10dp" android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_login_row" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/str_enter_address"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginRight="5dp"
+                android:layout_height="10dp" android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_login_row" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_detail_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txvSelectTypeOfFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#263e4d"
+                    android:gravity="center"
+                    android:text="@string/str_select_type_of_food"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbVeg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="6"
+                                 />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_veg"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbNonVeg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="6"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_nonveg"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbBoth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="6"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_both"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#50ffffff"
+                android:orientation="vertical"
+                 >
+
+                <TextView
+                    android:id="@+id/txvSelectType"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#263e4d"
+                    android:gravity="center"
+                    android:text="@string/str_select_type"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical">
+                    <com.analytics.bonjourseller.ExpandableHeightGridView
+                        android:id="@+id/ehgTypeOfFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="2dp"
+                        android:numColumns="2"
+                        android:verticalSpacing="2dp" />
+                    <!--
+                   <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbSouthIndian"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvSouthIndian"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_south_indian"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbPunjabi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvPunjabi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_punjabi"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbChinese"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvChinese"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_chinese"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbThai"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvThai"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_thai"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbMexican"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvMexican"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_mexican"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chbPizza"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:button="@drawable/checkbox_selector_add_offer" />
+
+                            <TextView
+                                android:id="@+id/txvPizza"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/str_pizza"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                --></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_detail_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txvTypeOfEstablishment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#263e4d"
+                    android:gravity="center"
+                    android:text="@string/str_type_of_establishment"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btnRestaurant"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_restaurant"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btnQuickBite"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_qucik_bite"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btnBakery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_bakery"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btnCafe"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_cafe"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btnDining"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_dining"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btnBeverage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/set_add_offer_location_border"
+                            android:text="@string/str_beverage"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_take_multi_image_of_menu"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/set_add_offer_location_background"
+                    android:text="@string/str_upload_image"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <com.analytics.bonjourseller.ExpandableHeightGridView
+                android:id="@+id/ehgUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:verticalSpacing="2dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+            <Button
+                android:id="@+id/btnPickLocation"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/set_add_offer_location_background"
+                android:text="@string/str_pick_location_on_map"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edtLatitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/str_latitude" android:inputType="number"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_login_row" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edtLongitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/str_longitude"
+                            android:inputType="number"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_login_row" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/chbTermsAndCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="6"
+                    android:button="@drawable/checkbox_selector_add_offer" />
+
+                <TextView
+                    android:id="@+id/txvTermsAndCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_terms_and_condition"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp" android:layout_marginBottom="20dp"
+                android:layout_marginRight="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmitFoodOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_login_background"
+                    android:gravity="center"
+                    android:text="@string/str_submit"
+                    android:textAllCaps="true"
+                    android:textColor="#244d65"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

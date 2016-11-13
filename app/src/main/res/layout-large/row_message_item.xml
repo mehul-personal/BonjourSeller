@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llShareLocationRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+        <ImageView
+            android:id="@+id/imvMessageIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_white_tracking" />
+        <TextView
+            android:id="@+id/txvShareLocationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="gfdsgdf"
+            android:textSize="22sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.analytics.bonjourseller.MapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_half_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_style"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imvOffers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_offer" />
+
+            <TextView
+                android:id="@+id/txvOffers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="@string/str_offers"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_style"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_message" />
+
+            <TextView
+                android:id="@+id/txvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="@string/str_messages"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_style"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imvSellerZone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_sellerzone" />
+
+            <TextView
+                android:id="@+id/txvSellerZone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="@string/str_sellerzone"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context="com.analytics.bonjourseller.MapsActivity" />
+
+
+    <LinearLayout
+        android:id="@+id/llOfferMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ExpandableListView
+            android:id="@+id/elvOfferList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:childDivider="@android:color/darker_gray"
+            android:groupIndicator="@null"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvMessageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:childDivider="@android:color/darker_gray"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

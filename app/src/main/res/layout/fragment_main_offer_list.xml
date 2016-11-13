@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context="com.analytics.bonjourseller.MainOfferListFragment">
+
+    <ListView
+        android:id="@+id/lvOfferList" android:background="#50000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+</FrameLayout>

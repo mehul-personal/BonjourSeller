@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/forgot_dialog_style"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvSelectPersonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/str_select_person"
+                    android:textColor="#005e95"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/imvClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_dialog_close" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c8c8c8" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/actSearchPerson"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_style"
+                android:hint="@string/str_enter_your_email_address"
+                android:paddingLeft="10dp"
+                android:singleLine="true" android:textSize="25sp"
+                android:textColor="#005e95"
+                android:textColorHint="#8a8787" />
+
+            <ListView
+                android:id="@+id/lsvSelectPersonList"
+                android:layout_width="match_parent"
+                android:layout_height="260dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_horizontal_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txvShareLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_share_location"
+                    android:textColor="#005e95"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_vertical_divider" />
+
+                <TextView
+                    android:id="@+id/txvShareViaOtherApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_share_via_other"
+                    android:textColor="#908b8b"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

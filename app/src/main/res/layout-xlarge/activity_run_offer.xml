@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvDisplayRunOfferHeader"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/style_round_corner_border"
+                android:gravity="center"
+                android:text="@string/str_run_offer"
+                android:textColor="#ffffff"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/style_round_corner_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txvVisibleItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/str_offer_visible_items"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnTextOnly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/set_add_offer_location_border"
+                        android:text="@string/str_text_only"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btnImageOnly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/set_add_offer_location_border"
+                        android:text="@string/str_image_only"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btnTextImageOnly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/set_add_offer_location_border"
+                        android:text="@string/str_text_and_image"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edtNoOfPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/str_no_of_people_take_benefit"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_login_row" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edtAddttionalDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/str_additional_description"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_login_row" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/edtOfferExpire"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="@string/str_offer_expire"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="28sp" />
+
+                        <ImageView
+                            android:id="@+id/imvTimePicker"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_calender" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_login_row" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txvAreaOfRadius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_area_of_radius"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="28sp" />
+
+                    <Spinner
+                        android:id="@+id/spnArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/area_array"></Spinner>
+
+                    <TextView
+                        android:id="@+id/txvKM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1.5"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_km"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+
+                <com.analytics.bonjourseller.ExpandableHeightGridView
+                    android:id="@+id/ehgDisplayUploadedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnUploadedMoreImage"
+                        android:layout_width="280dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/set_add_offer_location_background"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="@string/str_upload_more_image"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnRunOffer"
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/set_add_offer_location_background"
+                        android:text="@string/str_run_offer"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

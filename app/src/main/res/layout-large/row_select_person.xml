@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/llForwardUserRow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chbSelectPerson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txvSelectPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="gfdsgdf"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#005e95"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

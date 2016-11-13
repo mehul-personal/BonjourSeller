@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/ic_background"
+    tools:context="com.analytics.bonjourseller.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_buyer_logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="280dp">
+
+        <TextView
+            android:id="@+id/txvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/str_welcome"
+            android:textColor="#ffffff"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txvToBonjour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/str_to_bonjour"
+            android:textColor="#244d65"
+            android:textSize="70sp" />
+    </LinearLayout>
+
+</RelativeLayout>

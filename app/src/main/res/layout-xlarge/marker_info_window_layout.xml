@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forgot_dialog_style"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvPlaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="center"
+                android:text="Fast Food"
+                android:textColor="#005e95"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c8c8c8" />
+
+            <TextView
+                android:id="@+id/txvPlaceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Get 1 Buy 2 free"
+                android:textColor="#0c86a6"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txvPlaceNoOfPeople"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="2dp"
+                android:text="Offer available into 0 people"
+                android:textColor="#0c86a6"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="#FFFFff"
+                android:text="More Info >>"
+                android:textAllCaps="false"
+                android:textColor="#005e95"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
